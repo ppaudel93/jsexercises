@@ -12,21 +12,26 @@ var weekday = [
   "Friday",
   "Saturday"
 ];
+setInterval(() => {
+  let date = new Date();
+  let day = date.getDay();
+  let hours = date.getHours(),
+    minutes = date.getMinutes(),
+    seconds = date.getSeconds();
+  let amorpm;
+  hours < 12 ? (amorpm = "AM") : (amorpm = "PM");
+  hours > 12 ? (hours = hours - 12) : (hours = hours);
+  document.getElementById("timedatehead").innerHTML = `Today is : ${
+    weekday[day]
+  }. Current time is : ${hours} ${amorpm} : ${minutes} : ${seconds}`;
+}, 1000);
 let day = date.getDay();
-console.log("Today is : " + weekday[day] + ".");
 let hours = date.getHours(),
   minutes = date.getMinutes(),
   seconds = date.getSeconds();
 let amorpm;
 hours < 12 ? (amorpm = "AM") : (amorpm = "PM");
 hours > 12 ? (hours = hours - 12) : (hours = hours);
-console.log(
-  "Current time is : " +
-    hours +
-    " " +
-    amorpm +
-    " : " +
-    minutes +
-    " : " +
-    seconds
-);
+document.getElementById("timedatehead").innerHTML = `Today is : ${
+  weekday[day]
+}. Current time is : ${hours} ${amorpm} : ${minutes} : ${seconds}`;
