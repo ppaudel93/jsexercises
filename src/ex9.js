@@ -1,4 +1,5 @@
 // 9. Write a JavaScript program to calculate days left until next Christmas.
+
 setInterval(() => {
   let currentdate = new Date();
   let difference;
@@ -77,9 +78,3 @@ if (currentdate.getMonth() == 11 && currentdate.getUTCDate() > 25) {
     "christmascalculator"
   ).innerHTML = `${difference} Days left until christmas`;
 }
-
-// console.log(currentdate);
-// let difference = new Date(currentdate.getFullYear(), 11, 10) - currentdate;
-// console.log(difference);
-// console.log(Math.ceil(difference / (1000 * 60 * 60 * 24)));
-// console.log(new Date(currentdate.getFullYear() - 1, 11, 25));
