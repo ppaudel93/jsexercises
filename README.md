@@ -5,5 +5,5 @@ steps:
   ->cd inside the folder
   ->npm install
   ->(optional) install live server plugin on vscode
-  ->run index.html (optional: run index.html using live server
+  ->run index.html (optional: run index.html using live server)
   
