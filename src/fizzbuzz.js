@@ -7,9 +7,3 @@ for (let i = 1; i < 101; i++) {
     ? console.log("Fizz")
     : console.log(i);
 }
-
-let txt = "jgmscisnhasdasdhasdasdasdh";
-console.log(txt.indexOf("h"));
-
-console.log(txt.slice(5, 10));
-console.log(new Date());

@@ -15,7 +15,6 @@ function displayConversion(outputt) {
   document.getElementById("tempconvertoutput").innerHTML = output;
   document.getElementById("tempconvertoutput").style.display = "block";
 }
-console.log("ex11" + outputtemp + inputtemp + fromoption + tooption);
 function tempCalculator() {
   inputtemp = Number(document.getElementById("tempconvertinput").value);
   fromoption = document.getElementById("fromtemperature").options.selectedIndex;

@@ -2,9 +2,9 @@
 // Expected Output :
 // mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
 
-let date = new Date();
-let year = date.getFullYear(),
-  month = date.getMonth(),
-  day = date.getDate();
+let date2 = new Date();
+let year2 = date2.getFullYear(),
+  month2 = date2.getMonth(),
+  day2 = date2.getDate();
 document.getElementById("datehead").innerHTML =
-  month + 1 + "-" + day + "-" + year;
+  month2 + 1 + "-" + day2 + "-" + year2;

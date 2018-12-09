@@ -28,6 +28,7 @@
     <button onclick="onMultiplyClick()">Multiply</button>
     <button onclick="onDivideClick()">Divide</button>
     <h1 id="mulDivResult" style="display: none;">Result of Multiply/Divide</h1>
+    <h1></h1>
     <input
       id="tempconvertinput"
       placeholder="Enter Temperature"
@@ -45,7 +46,36 @@
       ><option value="fahrenheit">Fahrenheit</option></select
     >
     <h1 id="tempconvertoutput" style="display: none;">temperature output</h1>
+    <h1></h1>
     <button onclick="showWebsiteUrl()">Click me for website URL</button>
+    <button onclick="customUserGivenVariable()">
+      Click to run custom variable exercise
+    </button>
+    <button onclick="extractFilename()">
+      Click to run file extension extractor.
+    </button>
+    <h1></h1>
+    <input
+      id="absdiffdoublerinput"
+      type="number"
+      placeholder="Enter a number"
+      oninput="absDifferenceDoubler()"
+    />
+    <h1 id="absdiffdoubleroutput" style="display: none;"></h1>
+    <h1></h1>
+    <input
+      id="summertriplerinput1"
+      type="number"
+      placeholder="Enter 1st number"
+      oninput="summerAndTripler()"
+    />
+    <input
+      id="summertriplerinput2"
+      type="number"
+      placeholder="Enter 2nd number"
+      oninput="summerAndTripler()"
+    />
+    <h1 id="summertripleroutput" style="display: none;"></h1>
     <script src="./src/ex1.js"></script>
     <script src="./src/ex2.js"></script>
     <script src="./src/ex3.js"></script>
@@ -58,6 +88,11 @@
     <script src="./src/ex10.js"></script>
     <script src="./src/ex11.js"></script>
     <script src="./src/ex12.js"></script>
+    <script src="./src/ex13.js"></script>
+    <script src="./src/ex14.js"></script>
+    <script src="./src/ex15.js"></script>
+    <script src="./src/ex16.js"></script>
+    <h1></h1>
     <button onclick="printThisPage()">Print This Page</button>
   </body>
 </html>
